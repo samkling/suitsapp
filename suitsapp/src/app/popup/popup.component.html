@@ -1,0 +1,21 @@
+<div class="pop">
+<h3>Update Information</h3>
+<div mat-dialog-content>
+  <label>Name</label>
+  <br>
+  
+  <input mdInput type="text" #name >
+  
+  <br>
+
+  <label>Job</label>
+  <br>
+  
+  <input mdInput type="text" #job >
+  
+</div>
+<div mat-dialog-actions>
+  <button md-button class="popup-btn" (click)="dialogRef.close({name: name.value, job: job.value})">Update</button>
+</div>
+<p id="err">{{errorMessage}}</p>
+</div>

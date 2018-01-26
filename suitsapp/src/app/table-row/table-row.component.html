@@ -1,0 +1,8 @@
+<td *ngFor="let col of columns">
+    {{character[col]}}
+</td>
+<td>
+    <button id="edit" name="edit" (click)="editPress($event)">Edit</button>
+    <button id="delete" name="delete" (click)="deletePress($event)">Delete</button>
+    <!-- <button id="delete"  name="delete" value="Delete" /> -->
+</td>

@@ -1,0 +1,11 @@
+<table class="table">
+    <tr>
+      <th *ngFor="let c of columns">{{c}}</th>
+      <th>Operation</th>
+    </tr>
+    <tr *ngFor="let ch of characters | async" 
+        app-table-row 
+        [character]="ch" 
+        [columns]="columns">  
+    </tr>
+</table>
