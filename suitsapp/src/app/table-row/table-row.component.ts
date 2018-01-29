@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MatDialogModule } from '@angular/material';
 import {MatDialog, MatDialogRef} from '@angular/material';
 import {PopupComponent} from '../popup/popup.component';
-
+import * as $ from 'jquery';
 
 
 @Component({

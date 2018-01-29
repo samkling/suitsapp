@@ -11,7 +11,8 @@ export class TableComponent implements OnInit {
 
   characters: Observable<any[]>;
   columns: string[];
-
+  //initializing p to one
+  p: number = 1;
   constructor(private atService: SuitsService) { }
 
   ngOnInit() {

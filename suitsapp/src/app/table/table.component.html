@@ -1,9 +1,10 @@
 <table class="table">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
     <tr>
-      <th *ngFor="let c of columns">{{c}}</th>
+      <th *ngFor="let c of columns ">{{c}}</th>
       <th>Operation</th>
     </tr>
-    <tr *ngFor="let ch of characters | async" 
+    <tr *ngFor="let ch of characters | async | paginate: { itemsPerPage: 5, currentPage: p };" 
         app-table-row 
         [character]="ch" 
         [columns]="columns">  

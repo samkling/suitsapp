@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgxPaginationModule} from 'ngx-pagination'; // <-- import the module
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -10,6 +11,7 @@ import { SuitsService } from './suits.service';
 import { MatDialogModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PopupComponent } from './popup/popup.component'
+
 
 
 
@@ -24,7 +26,8 @@ import { PopupComponent } from './popup/popup.component'
     BrowserModule,
     AppRoutingModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPaginationModule
   ],
   entryComponents: [PopupComponent],
   providers: [ SuitsService ],
